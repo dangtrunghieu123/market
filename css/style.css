@@ -1,9 +1,327 @@
-body {
-  background: grey; }
+.nav1 {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333333; }
+  .nav1 .ul1, .nav1 .ul2 {
+    display: flex;
+    align-items: center; }
+  .nav1 .ul1 li, .nav1 .ul2 li {
+    list-style: none;
+    font-size: 25px; }
+  .nav1 .ul1 li a, .nav1 .ul2 li a {
+    text-decoration: none; }
+  .nav1 .ul1 li a img {
+    height: 72px;
+    padding: 20px 50px 0px 50px; }
+  .nav1 .ul2 li a {
+    padding: 20px;
+    font-size: 50px;
+    color: gray;
+    border-right: 1px solid gray; }
+    .nav1 .ul2 li a i {
+      width: 45px;
+      text-align: center; }
+  .nav1 .ul2 li a:hover {
+    color: white;
+    background: black; }
 
-body {
-  font: 100% Helvetica, sans-serif;
-  color: blue; }
+.header {
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+  top: 11%;
+  background: white;
+  height: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .header .logo a {
+    text-decoration: none;
+    font-size: 35px;
+    color: black; }
+  .header .search a {
+    text-decoration: none;
+    color: gray;
+    padding: 20px;
+    font-size: 20px; }
+    .header .search a .fa-search {
+      color: black; }
+  .header .search a:hover {
+    color: red; }
+  .header .ul {
+    display: flex; }
+    .header .ul li {
+      text-align: center;
+      width: 150px;
+      list-style: none; }
+      .header .ul li a {
+        padding: 10px;
+        font-size: 22px;
+        text-decoration: none;
+        color: gray; }
+        .header .ul li a i {
+          margin-left: 2px; }
+      .header .ul li .active {
+        color: black; }
+      .header .ul li a:hover {
+        color: black; }
+    .header .ul .dropdown {
+      position: relative; }
+      .header .ul .dropdown .dropdown-content {
+        border: 1px solid gray;
+        position: absolute;
+        top: 100%;
+        display: none; }
+        .header .ul .dropdown .dropdown-content a {
+          margin-right: 30px; }
+    .header .ul .dropdown:hover .dropdown-content {
+      display: block; }
 
-h1 {
-  color: red; }
+.slider {
+  margin-top: 16%;
+  height: 900px;
+  max-width: 100%; }
+  .slider .bgimg {
+    position: relative;
+    height: 100%;
+    margin: 0 100px;
+    background: url("https://thetechreviewer.com/wp-content/uploads//2013/04/applemagicmouse.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+    .slider .bgimg .content {
+      color: white;
+      position: absolute;
+      top: 35%;
+      left: 7%; }
+      .slider .bgimg .content h1 {
+        font-size: 65px;
+        width: 600px; }
+      .slider .bgimg .content p {
+        margin: 35px 0;
+        font-size: 20px;
+        width: 600px; }
+      .slider .bgimg .content .submit {
+        margin-top: 50px;
+        width: 200px;
+        height: 90px;
+        border: 2px solid white; }
+        .slider .bgimg .content .submit p {
+          width: 85%;
+          font-size: 25px;
+          margin-top: 26px;
+          margin-left: 30px; }
+      .slider .bgimg .content .submit:hover {
+        background: aqua; }
+
+.product {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+  height: 500px;
+  margin-left: 82px;
+  max-width: 90%; }
+  .product .left {
+    position: relative;
+    height: 100%;
+    background: url("https://dailygiamgia.com/wp-content/uploads/2018/03/dailygiamgia-dien-thoai-thong-minh-gia-re-htc-10-evo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40%; }
+    .product .left div {
+      height: 86%;
+      width: 86%;
+      position: absolute;
+      top: 9%;
+      left: 7%;
+      border: 2px solid white; }
+      .product .left div p a {
+        position: absolute;
+        top: 45%;
+        left: 7%;
+        color: white;
+        font-size: 30px; }
+      .product .left div h1 {
+        position: absolute;
+        top: 30%;
+        left: 7%;
+        color: white;
+        font-size: 55px; }
+  .product .right {
+    position: relative;
+    height: 100%;
+    background: url("https://zshop.vn/images/link/69/eos-m6_1513_rwq0-ou.jpg?t=1491360115");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 56%; }
+    .product .right div {
+      position: absolute;
+      top: 8%;
+      left: 8%;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      width: 70%;
+      height: 85%; }
+      .product .right div h1 {
+        position: absolute;
+        top: 25%;
+        left: 7%;
+        color: white;
+        font-size: 60px; }
+      .product .right div p {
+        position: absolute;
+        top: 60%;
+        left: 7%;
+        color: white;
+        font-size: 20px; }
+      .product .right div span a {
+        position: absolute;
+        top: 80%;
+        left: 7%;
+        font-size: 25px; }
+
+.introduce {
+  max-width: 90%;
+  margin-left: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center; }
+  .introduce div {
+    margin-top: 50px;
+    height: 400px;
+    width: 23%; }
+    .introduce div img {
+      max-width: 100%;
+      height: 80%;
+      box-shadow: 6px 6px 5px gray; }
+    .introduce div h1 {
+      margin-top: 20px;
+      height: 12%; }
+    .introduce div p {
+      height: 8%; }
+    .introduce div h1:hover {
+      color: red;
+      cursor: pointer; }
+
+.bg2 {
+  margin-top: 100px;
+  width: 88%;
+  margin-left: 100px;
+  height: 450px;
+  position: relative;
+  background: url("http://vnreview.vn/image/18/13/48/1813485.jpg?t=1528356992222");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .bg2 .device {
+    position: absolute;
+    top: 10%;
+    left: 63%;
+    width: 34%;
+    height: 85%;
+    background: #e95a5a;
+    color: white; }
+    .bg2 .device h1 {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      font-size: 60px; }
+    .bg2 .device p {
+      position: absolute;
+      top: 200px;
+      left: 50px;
+      font-size: 20px;
+      cursor: pointer; }
+    .bg2 .device span {
+      position: absolute;
+      top: 270px;
+      left: 50px;
+      font-size: 20px; }
+
+.method {
+  max-width: 90%;
+  margin-top: 60px;
+  margin-left: 70px;
+  height: 370px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .method div {
+    width: 32%;
+    height: 100%; }
+    .method div span {
+      font-size: 70px;
+      color: gray; }
+    .method div p {
+      font-size: 20px; }
+    .method div h3 {
+      margin: 25px 0;
+      font-size: 30px; }
+
+.subcribe hr {
+  width: 80%;
+  height: 3px;
+  background: #e3e3e3; }
+
+.subcribe .content {
+  width: 55%;
+  margin-top: 100px;
+  margin-left: 300px;
+  text-align: center; }
+  .subcribe .content p {
+    margin-top: 20px;
+    font-size: 25px;
+    color: gray; }
+  .subcribe .content h2 {
+    font-size: 50px; }
+  .subcribe .content hr {
+    margin-top: 150px;
+    background: black; }
+  .subcribe .content div {
+    margin-top: 60px;
+    margin-left: 35%;
+    width: 300px;
+    font-size: 60px;
+    text-align: center;
+    border: 2px solid black; }
+  .subcribe .content div:hover {
+    background: rgba(0, 0, 0, 0.8);
+    border: none;
+    color: white; }
+
+footer {
+  height: 100px;
+  background-image: linear-gradient(to bottom right, #111111, #C0C0C0);
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white; }
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    footer ul li {
+      list-style: none; }
+      footer ul li a {
+        color: white;
+        margin: 10px 20px;
+        font-size: 40px; }
+    footer ul li:hover {
+      color: blue; }
+  footer div a {
+    font-size: 50px; }
+  footer div a {
+    color: white;
+    font-size: 40px; }
